@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ---------- Splash / loader ---------- */
+
+@keyframes splashFadeUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.splash-appear {
+  animation: splashFadeUp 0.9s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+@keyframes brandTextGlow {
+  0% {
+    letter-spacing: 0.18em;
+    text-shadow: 0 0 0 rgba(0, 255, 255, 0.0);
+  }
+  60% {
+    letter-spacing: 0.36em;
+    text-shadow: 0 0 28px rgba(0, 255, 255, 0.65);
+  }
+  100% {
+    letter-spacing: 0.32em;
+    text-shadow: 0 0 16px rgba(0, 255, 255, 0.35);
+  }
+}
+
+.brand-title-main {
+  animation: brandTextGlow 1.1s ease-out forwards;
+}
+
+@keyframes barPulse {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    opacity: 0.4;
+  }
+  20% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.modern-loader .loader-bar-segment {
+  width: 4px;
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #e5f9ff, #22d3ee);
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.7);
+  transform-origin: center bottom;
+  animation: barPulse 0.9s ease-in-out infinite;
+}
+
+.modern-loader .loader-bar-segment-delay-1 {
+  animation-delay: 0.12s;
+}
+
+.modern-loader .loader-bar-segment-delay-2 {
+  animation-delay: 0.24s;
+}
+
