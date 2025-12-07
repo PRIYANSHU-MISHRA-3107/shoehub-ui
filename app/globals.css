@@ -129,6 +129,18 @@
   }
 }
 
+@keyframes orbFloat4 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(60px, 30px) scale(1.2);
+  }
+  75% {
+    transform: translate(-50px, -40px) scale(0.8);
+  }
+}
+
 .animate-orb-float-1 {
   animation: orbFloat1 8s ease-in-out infinite;
 }
@@ -139,6 +151,10 @@
 
 .animate-orb-float-3 {
   animation: orbFloat3 12s ease-in-out infinite;
+}
+
+.animate-orb-float-4 {
+  animation: orbFloat4 14s ease-in-out infinite;
 }
 
 /* Rotating shapes */
@@ -186,6 +202,81 @@
 
 .animate-pulse-ring {
   animation: pulseRing 2s ease-in-out infinite;
+}
+
+@keyframes pulseRingDelayed {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+}
+
+.animate-pulse-ring-delayed {
+  animation: pulseRingDelayed 2.5s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Floating particles */
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(20px);
+    opacity: 0;
+  }
+}
+
+.animate-particle-float {
+  animation: particleFloat linear infinite;
+}
+
+/* Progress bar shimmer */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.progress-bar-fill {
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.6), 0 0 40px rgba(251, 146, 60, 0.4);
 }
 
 /* Modern dots loader */
