@@ -77,7 +77,7 @@ export default function Hero() {
 
       {/* BACKGROUND PARTICLES */}
       <div className="absolute inset-0 pointer-events-none animate-pulse opacity-20">
-        <div className="absolute w-[500px] h-[500px] rounded-full bg-red-500 blur-[250px] -top-40 -left-40"></div>
+        <div className="absolute w-[500px] h-[500px] rounded-full bg-red-600 blur-[250px] -top-40 -left-40"></div>
         <div className="absolute w-[500px] h-[500px] rounded-full bg-red-500 blur-[250px] -bottom-40 right-10"></div>
       </div>
 

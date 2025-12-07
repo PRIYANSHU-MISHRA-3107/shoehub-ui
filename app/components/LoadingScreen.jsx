@@ -2,7 +2,7 @@ export default function LoadingScreen() {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-slate-950 via-black to-slate-900 overflow-hidden">
       {/* Animated background orbs */}
-      <div className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-orange-500/40 via-red-500/30 to-amber-500/40 blur-[140px] animate-orb-float-1" />
+      <div className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-orange-700/40 via-red-600/30 to-amber-400/40 blur-[140px] animate-orb-float-1" />
       <div className="absolute w-[500px] h-[500px] rounded-full bg-gradient-to-r from-pink-500/30 via-rose-500/25 to-orange-500/35 blur-[120px] animate-orb-float-2" />
       <div className="absolute w-[450px] h-[450px] rounded-full bg-amber-400/20 blur-[100px] animate-orb-float-3" />
 
