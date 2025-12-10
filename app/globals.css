@@ -5,6 +5,43 @@
   -webkit-text-stroke: 2px white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero / Menhero extras */
+@keyframes gradientPan {
+  0% {
+    transform: translateX(-20%);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+.animate-gradient-pan {
+  animation: gradientPan 16s ease-in-out infinite alternate;
+}
+
+@keyframes floatSoft {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float-soft {
+  animation: floatSoft 5s ease-in-out infinite;
+}
+
 @keyframes float {
   0% {
     transform: translateY(0px);

@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import Hero from "./components/Hero";
 import MenHero from "./components/Menhero";
 import LoadingScreen from "./components/LoadingScreen";
+import Footer from "./components/Footer";
 
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +37,7 @@ const Page = () => {
       >
         <Hero />
         <MenHero />
+        <Footer />
       </div>
     </>
   );
